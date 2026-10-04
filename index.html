@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>隐私政策 · 海星助手 Astero</title>
+    <style>
+      :root {
+        --bg: #f6f7f9; --panel: #fff; --fg: #1a1c20; --muted: #5f656f;
+        --line: #e4e7ec; --accent: #2f6fd0;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #15171c; --panel: #1d2026; --fg: #eceef1; --muted: #9aa1ac;
+          --line: #2b2f38; --accent: #74a9f5;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0; background: var(--bg); color: var(--fg);
+        font: 15px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC",
+              "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+        padding: 40px 16px 80px;
+      }
+      main { max-width: 760px; margin: 0 auto; }
+      .card {
+        background: var(--panel); border: 1px solid var(--line);
+        border-radius: 12px; padding: 28px 30px; margin-bottom: 18px;
+      }
+      h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.01em; }
+      h2 {
+        font-size: 17px; margin: 30px 0 8px; padding-top: 18px;
+        border-top: 1px solid var(--line);
+      }
+      h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 10px; }
+      p, li { margin: 8px 0; }
+      ul { padding-left: 20px; }
+      .muted { color: var(--muted); }
+      .lead { font-size: 15px; }
+      code {
+        font: 13px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+        background: var(--bg); border: 1px solid var(--line);
+        border-radius: 5px; padding: 1px 5px;
+      }
+      table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+      th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+      th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+      .wrap { overflow-x: auto; }
+      .key { font-weight: 600; }
+      a { color: var(--accent); }
+      footer { color: var(--muted); font-size: 13px; text-align: center; }
+      @media (max-width: 480px) { .card { padding: 22px 18px; } h1 { font-size: 22px; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <h1>隐私政策</h1>
+        <p class="muted">海星助手（Astero）浏览器扩展与桌面端 · 生效日期 2026-10-04</p>
+
+        <p class="lead">
+          海星助手是公司内部员工使用的工作助手，由桌面端程序和一个 Chrome 扩展组成。
+          扩展的作用只有一个：在员工<strong>本人已经登录的浏览器里</strong>，
+          替他读取当前页面的内容、完成他要求的点击和输入。
+        </p>
+
+        <h2>我们处理哪些数据</h2>
+        <ul>
+          <li>
+            <span class="key">网页内容</span>——员工<strong>当下正在操作的那一个标签页</strong>上
+            已经渲染出来的可见文字，也就是他本人在屏幕上本来就看得见的内容。
+          </li>
+          <li><span class="key">页面地址与标题</span>——用来确认助手操作的是他指的那一页，并在回话里告诉他操作了哪一页。</li>
+          <li><span class="key">本地配置</span>——这个浏览器与哪一台本机桌面端配对、该连接使用的令牌、各站点的频率限制。</li>
+          <li><span class="key">下载文件的本地路径</span>——仅当员工要求助手下载某个文件时，用于告诉他文件存到了哪里。</li>
+        </ul>
+
+        <h2>我们不处理哪些数据</h2>
+        <ul>
+          <li><strong>Cookie 与认证令牌：从不读取，也从不上传。</strong> 没有任何功能需要它们。</li>
+          <li>浏览历史、书签、未经员工要求打开的页面。</li>
+          <li>身份信息、健康信息、财务与支付信息、个人通信内容、地理位置。</li>
+          <li>键盘按键记录；扩展不在后台监听页面。</li>
+        </ul>
+
+        <h2>数据去了哪里</h2>
+        <p>
+          扩展<strong>不直接把任何数据发到互联网上</strong>。它唯一的网络连接是
+          <code>127.0.0.1</code> 上的一条本地连接，连到员工<strong>这台电脑上</strong>
+          运行的海星助手桌面端。
+        </p>
+        <p>
+          桌面端再按公司的配置，把完成这项任务所需的文字交给公司自有的服务端，
+          以及公司选用的大模型服务（阿里云百炼 DashScope、DeepSeek，或公司自托管的模型），
+          由它生成下一步操作或答复。数据只在完成员工当次请求的范围内被使用。
+        </p>
+
+        <h2>不出售、不转让</h2>
+        <ul>
+          <li>我们<strong>不出售</strong>这些数据，也不把它转让给任何第三方用于其自身目的。</li>
+          <li>不把它用于与助手功能无关的用途。</li>
+          <li>不用它判定信用、不做任何形式的信用评估。</li>
+          <li>不用于广告投放或画像。</li>
+        </ul>
+
+        <h2>扩展申请的权限，各自为了什么</h2>
+        <div class="wrap">
+          <table>
+            <tr><th>权限</th><th>用途</th></tr>
+            <tr><td><code>tabs</code></td><td>找到并聚焦员工指的那个标签页，读取它的地址和标题。</td></tr>
+            <tr><td><code>scripting</code></td><td>把扩展自带的函数注入当前页面，提取可见文字、完成点击与输入。</td></tr>
+            <tr><td><code>debugger</code></td><td>少数页面（canvas 表格、字体混淆的数字、只认可信事件的输入框）无法只靠 DOM 操作，这时附加开发者协议发送真实输入事件，用完立即断开。只附加到正在操作的那一个标签页。</td></tr>
+            <tr><td><code>downloads</code></td><td>保存员工要求下载的文件，并告诉他存到了哪里。</td></tr>
+            <tr><td><code>storage</code></td><td>保存与本机桌面端的配对信息和各站点频率限制。不保存页面内容，不保存凭据。</td></tr>
+            <tr><td><code>alarms</code></td><td>MV3 的后台脚本会被浏览器挂起，用定时器唤醒它重新连上本机桌面端。</td></tr>
+            <tr><td><code>&lt;all_urls&gt;</code></td><td>在哪个网站上干活由员工自己决定，没有固定清单。员工没有在桌面端提出具体任务之前，扩展不对任何页面做任何事。</td></tr>
+          </table>
+        </div>
+
+        <h2>保存多久</h2>
+        <p>
+          扩展本身不保存页面内容——读完就交给本机桌面端，不落盘。对话记录与任务记录
+          保存在公司自有的系统里，按公司内部的数据保留规定处理。
+        </p>
+
+        <h2>适用范围</h2>
+        <p>
+          本扩展供公司内部员工使用，需配合「海星助手」桌面端才能工作，不单独提供服务。
+        </p>
+
+        <h2>变更</h2>
+        <p>本政策如有变更，会更新本页并修改页首的生效日期。</p>
+
+        <h2>联系我们</h2>
+        <p>
+          对本政策或数据处理有任何疑问：<a href="mailto:hyouhaku@gmail.com">hyouhaku@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="card" lang="en">
+        <h1>Privacy Policy</h1>
+        <p class="muted">Astero Assistant browser extension and desktop app · Effective 2026-10-04</p>
+
+        <p class="lead">
+          Astero Assistant is an internal work assistant for our own employees. It consists of a
+          desktop application and a Chrome extension. The extension has one job: inside the
+          browser session the employee is <strong>already signed in to</strong>, read the page
+          they are working on and perform the clicks and typing they asked for.
+        </p>
+
+        <h2>What we handle</h2>
+        <ul>
+          <li><span class="key">Website content</span> — the rendered, visible text of the single tab the user is currently acting on; that is, what the user can already see on their own screen.</li>
+          <li><span class="key">Page URL and title</span> — to confirm the assistant is acting on the page the user meant, and to report back which page it worked on.</li>
+          <li><span class="key">Local configuration</span> — which local desktop app this browser is paired with, the token for that loopback connection, and per-site rate limits.</li>
+          <li><span class="key">The local path of a downloaded file</span> — only when the user asks the assistant to download something, so it can tell them where it went.</li>
+        </ul>
+
+        <h2>What we do not handle</h2>
+        <ul>
+          <li><strong>Cookies and authentication tokens are never read and never transmitted.</strong> No feature needs them.</li>
+          <li>Browsing history, bookmarks, or pages the user did not ask the assistant to work on.</li>
+          <li>Personally identifiable information, health information, financial or payment information, personal communications, or location.</li>
+          <li>Keystroke logging. The extension does not monitor pages in the background.</li>
+        </ul>
+
+        <h2>Where the data goes</h2>
+        <p>
+          The extension <strong>sends nothing to the internet directly</strong>. Its only network
+          connection is a loopback connection to <code>127.0.0.1</code> — the Astero desktop app
+          running on the user's own machine.
+        </p>
+        <p>
+          The desktop app then passes the text needed for the requested task to our own company
+          backend and to the language-model service the company has configured (Alibaba Cloud
+          DashScope, DeepSeek, or a self-hosted model), which produces the next action or answer.
+          The data is used only to carry out the user's request.
+        </p>
+
+        <h2>No sale, no transfer</h2>
+        <ul>
+          <li>We do <strong>not sell</strong> this data and do not transfer it to third parties for their own purposes.</li>
+          <li>We do not use it for purposes unrelated to the assistant's single purpose.</li>
+          <li>We do not use it to determine creditworthiness or for any lending purpose.</li>
+          <li>We do not use it for advertising or profiling.</li>
+        </ul>
+
+        <h2>Permissions and why each is needed</h2>
+        <div class="wrap">
+          <table>
+            <tr><th>Permission</th><th>Purpose</th></tr>
+            <tr><td><code>tabs</code></td><td>Find and focus the tab the user meant, and read its URL and title.</td></tr>
+            <tr><td><code>scripting</code></td><td>Inject functions that ship inside the package into the current page, to extract visible text and perform the requested click or typing.</td></tr>
+            <tr><td><code>debugger</code></td><td>Some pages cannot be driven through the DOM alone (canvas-rendered tables, font-obfuscated digits, inputs that only react to trusted events). For those, the DevTools protocol is attached to the single tab being acted on to dispatch real input events, and detached immediately afterwards.</td></tr>
+            <tr><td><code>downloads</code></td><td>Save a file the user asked the assistant to download, and report its local path.</td></tr>
+            <tr><td><code>storage</code></td><td>Store the pairing with the local desktop app and per-site rate limits. No page content and no credentials are stored.</td></tr>
+            <tr><td><code>alarms</code></td><td>Wake the suspended MV3 service worker so it can re-establish the connection to the local desktop app.</td></tr>
+            <tr><td><code>&lt;all_urls&gt;</code></td><td>The user decides which site to work on; there is no fixed list. The extension does nothing on any page until the user requests a specific task in the desktop app.</td></tr>
+          </table>
+        </div>
+
+        <h2>Retention</h2>
+        <p>
+          The extension itself stores no page content — it hands the text to the local desktop app
+          and keeps nothing on disk. Conversation and task records live in our own systems and are
+          kept according to our internal retention rules.
+        </p>
+
+        <h2>Scope</h2>
+        <p>
+          The extension is for our own employees and does not work on its own; it requires the
+          Astero desktop application.
+        </p>
+
+        <h2>Changes</h2>
+        <p>If this policy changes, this page is updated and the effective date above is revised.</p>
+
+        <h2>Contact</h2>
+        <p>
+          Questions about this policy or our data handling:
+          <a href="mailto:hyouhaku@gmail.com">hyouhaku@gmail.com</a>
+        </p>
+      </div>
+
+      <footer>海星智能 · Astero</footer>
+    </main>
+  </body>
+</html>
